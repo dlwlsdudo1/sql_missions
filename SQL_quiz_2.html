@@ -16,14 +16,14 @@ details {padding : 1rem; white-space: pre-wrap;}
 
 <div class='question' id='Q1'>
 
-      <h4>1. 부서ID, 거주도시명, 주소 검색하시오.(단 부서가 없는 거주도시명도 검색결과에 포함되도록 출력하라) </h4>
+      <h4>1. 부서ID(department_id), 거주도시명(city), 주소(street_address) 검색하시오.(단 부서가 없는 거주도시명도 검색결과에 포함되도록 출력하라) </h4>
       	
 
       <details>
             <summary>모범 답안</summary>
             <strong>select</strong> department_id, city, street_address
             <strong>from</strong> departments, locations
-            <strong>where</strong> departments.LOCATION_ID(+) = locations.LOCATION_ID
+            <strong>where</strong> departments.location_id(+) = locations.location_id
             <strong>order by</strong> department_id  <strong>asc</strong>;
             
 
