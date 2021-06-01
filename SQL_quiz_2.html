@@ -1,0 +1,86 @@
+<html>
+<header>
+<title>초보자도 할 수 있는 SQL></title>
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+<style>
+body {font-family: 'Nanum Gothic', sans-serif;}
+h1 {margin : 1rem;}
+details {padding : 1rem; white-space: pre-wrap;}
+.question {margin : 2rem; padding : 1rem; border: 1px solid gray;}
+</style>
+</header>
+
+<body>
+
+<h2>[초보자도 할 수 있는 SQL_0601 - 김수연, 부석민, 정주영A ]</h2>
+
+<div class='question' id='Q1'>
+
+      <h4>1. 부서ID(department_id), 거주도시명(city), 주소(street_address) 검색하시오.(단 부서가 없는 거주도시명도 검색결과에 포함되도록 출력하라) </h4>
+      	
+
+      <details>
+            <summary>모범 답안</summary>
+            <strong>select</strong> department_id, city, street_address
+            <strong>from</strong> departments, locations
+            <strong>where</strong> departments.location_id(+) = locations.location_id
+            <strong>order by</strong> department_id  <strong>asc</strong>;
+            
+
+           
+            DEPARTMENT_ID CITY                                                         STREET_ADDRESS
+------------- ------------------------------------------------------------ --------------------------------------------------------------------------------
+           10 Seattle                                                      2004 Charade Rd
+           20 Toronto                                                      147 Spadina Ave
+           30 Seattle                                                      2004 Charade Rd
+           40 London                                                       8204 Arthur St
+           50 South San Francisco                                          2011 Interiors Blvd
+           60 Southlake                                                    2014 Jabberwocky Rd
+           70 Munich                                                       Schwanthalerstr. 7031
+           80 Oxford                                                       Magdalen Centre, The Oxford Science Park
+           90 Seattle                                                      2004 Charade Rd
+          100 Seattle                                                      2004 Charade Rd
+          110 Seattle                                                      2004 Charade Rd
+          120 Seattle                                                      2004 Charade Rd
+          130 Seattle                                                      2004 Charade Rd
+          140 Seattle                                                      2004 Charade Rd
+          150 Seattle                                                      2004 Charade Rd
+          160 Seattle                                                      2004 Charade Rd
+          170 Seattle                                                      2004 Charade Rd
+          180 Seattle                                                      2004 Charade Rd
+          190 Seattle                                                      2004 Charade Rd
+          200 Seattle                                                      2004 Charade Rd
+          210 Seattle                                                      2004 Charade Rd
+          220 Seattle                                                      2004 Charade Rd
+          230 Seattle                                                      2004 Charade Rd
+          240 Seattle                                                      2004 Charade Rd
+          250 Seattle                                                      2004 Charade Rd
+          260 Seattle                                                      2004 Charade Rd
+          270 Seattle                                                      2004 Charade Rd
+              Utrecht                                                      Pieter Breughelstraat 837
+              Bern                                                         Murtenstrasse 921
+              Geneva                                                       20 Rue des Corps-Saints
+              Sao Paulo                                                    Rua Frei Caneca 1360
+              Stretford                                                    9702 Chester Road
+              Singapore                                                    198 Clementi North
+              Sydney                                                       12-98 Victoria Street
+              Bombay                                                       1298 Vileparle (E)
+              Beijing                                                      40-5-12 Laogianggen
+              Whitehorse                                                   6092 Boxwood St
+              South Brunswick                                              2007 Zagora St
+              Hiroshima                                                    9450 Kamiya-cho
+              Tokyo                                                        2017 Shinjuku-ku
+              Mexico City                                                  Mariano Escobedo 9991
+              Roma                                                         1297 Via Cola di Rie
+              Venice                                                       93091 Calle della Testa
+            
+            
+            
+      </details>
+
+</div>
+
+
+
+</body>
+</html>
