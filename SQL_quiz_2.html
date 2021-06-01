@@ -16,7 +16,7 @@ details {padding : 1rem; white-space: pre-wrap;}
 
 <div class='question' id='Q1'>
 
-      <h4>1. employees 테이블의 phone_number는 내선번호를 의미한다. 내선 번호가 515.123.xxxx인 부서의 아이디를 검색하고자 할 때 적절한 sql 쿼리를 작성하여라.</h4>
+      <h4>1. 부서ID, 거주도시명, 주소 검색하시오.(단 부서가 없는 거주도시명도 검색결과에 포함되도록 출력하라) </h4>
       	
 
       <details>
@@ -25,17 +25,11 @@ details {padding : 1rem; white-space: pre-wrap;}
             <strong>from</strong> employees
             <strong>where</strong> <strong>substr(</strong> phone_number, 1, 7<strong>)</strong> = '515.123';
 
-            FIRST_NAME  LAST_NAME    DEPARTMENT_ID
-            ---------------- ------------------ -------------------
-            Steven             King                90
-            Neena             Kochhar          90
-            Lex                  De Haan          90
-            Jennifer          Whalen           10
-            Michael          Hartstein         20
-            Susan             Mavris             40
-            Hermann       Baer                 70
-            Shelley           Higgins            110
-            William          Gietz                110
+           
+            <!--sql 결과물 입력하는 곳-->
+            
+            
+            
       </details>
 
 </div>
