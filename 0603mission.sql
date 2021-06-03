@@ -68,7 +68,11 @@ insert into programs (pr_id, pr_name, start_date, producer, br_id) values (1, '�
 
 
 --
-insert into broadcast (br_id, br_name, loc) values (1, 'KBS2', '서울시 영등포구')
+insert into  broadcast (br_id, br_name, loc) values (1, 'KBS2', '서울시 영등포구');
+insert into  broadcast (br_id, br_name, loc) values (2, 'MBC', '서울시 마포구');
+insert into  broadcast (br_id, br_name, loc) values (3, 'SBS', '서울시 양천구');
+insert into  broadcast (br_id, br_name, loc) values (4, 'JTBC', '서울시 마포구');
+insert into  broadcast (br_id, br_name, loc) values (5, 'tvN', '서울시 마포구');
 
 
 --
