@@ -72,4 +72,24 @@ insert into broadcast (br_id, br_name, loc) values (1, 'KBS2', '서울시 영등
 
 
 --
-insert into cl_br_match (cl_id, pr_id) values (1, 1)
+insert into cl_br_match (cl_id, pr_id) values (1, 1);
+insert into cl_br_match (cl_id, pr_id) values (1, 4);
+insert into cl_br_match (cl_id, pr_id) values (1, 6);
+insert into cl_br_match (cl_id, pr_id) values (2, 2);
+insert into cl_br_match (cl_id, pr_id) values (3, 3);
+insert into cl_br_match (cl_id, pr_id) values (4, 4);
+insert into cl_br_match (cl_id, pr_id) values (5, 6);
+insert into cl_br_match (cl_id, pr_id) values (6, 8);
+insert into cl_br_match (cl_id, pr_id) values (7, 7);
+insert into cl_br_match (cl_id, pr_id) values (8, 10);
+insert into cl_br_match (cl_id, pr_id) values (9, 9);
+insert into cl_br_match (cl_id, pr_id) values (10, 9);
+insert into cl_br_match (cl_id, pr_id) values (11, 9);
+insert into cl_br_match (cl_id, pr_id) values (12, 9);
+insert into cl_br_match (cl_id, pr_id) values (13, 9);
+insert into cl_br_match (cl_id, pr_id) values (14, 10);
+insert into cl_br_match (cl_id, pr_id) values (15, 10);
+insert into cl_br_match (cl_id, pr_id) values (16, 10);
+insert into cl_br_match (cl_id, pr_id) values (17, 10);
+insert into cl_br_match (cl_id, pr_id) values (18, 10);
+
